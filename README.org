@@ -1,17 +1,9 @@
-#+TITLE: Laboratorios para PHCT
-Este repositorio tiene algunos ejercicios para practicar el temario de PumaHat. Por ahora, solo hay uno.
+#+TITLE: Ruleta Proxy
+Tienes una ruleta con varias letras, una de ellas -la X- está premiada. Cada vez que gira la ruleta, la página envía una petición al servidor con la letra y tu nombre, y te devuelve un premio. Has de engañar al servidor haciéndole creer que has obtenido X en la ruleta tres veces seguidas.
 
-** Ejercicios
-*** Ruleta
-- [[http://localhost:8000/ruleta][Jugar]]
-Tienes una ruleta con varias letras, una de ellas -la X- está premiada. Cada vez que gira la ruleta, la página envía una petición al servidor con la letra y tu nombre, y te devuelve un premio. Has de engañar al servidor haciéndole creer que has obtenido X en la ruleta tres veces seguidas. En la consola que se abre al ejecutar el programa, puedes ver si lo has conseguido.
+* Ejecución
+Puedes crear un contenedor listo para jugar con el comando =docker run -d --rm -p 8000:8000 ruleta=. En cuanto detengas el contenedor, éste se borrará.
 
-** Requisitos
-- *Python 3* :: Bajo Windows, asegúrate de tener instalado Python3, y que esté en el PATH. Si abres una terminal, ejecutas el comando =python=, y te devuelve una consola de Python, ya está listo. De lo contrario, [[https://www.python.org/downloads/windows/][descárgalo]]. Bajo Linux, seguramente ya está instalado; y en Kali Linux, ya está todo preparado, así que no necesitas hacer nada más.
-
-** Ejecución
-En Windows, desde la interfaz gráfica, ejecuta el archivo =iniciar.bat=; o abre una consola en el directorio y ejecuta =python controlador.py=.
-
-En Linux, abre una consola y ejecuta =python3 controlador.py= o =python controlador.py=.
+En consola, abre una consola y ejecuta =python3 controlador.py= o =python controlador.py=.
 
 Y listo, [[http://localhost:8000/ruleta][abre la página desde el navegador de Burp Suite]], y podrás jugar con ella.
