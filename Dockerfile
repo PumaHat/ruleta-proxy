@@ -1,9 +1,9 @@
 FROM python:alpine
 
-WORKDIR /usr/src/app
+WORKDIR /srv/phct
 
-COPY controlador.py ./
-COPY ruleta.html ./
+COPY src/controlador.py ./
+COPY src/ruleta.html ./
 
 EXPOSE 8000/tcp
 
