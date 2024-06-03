@@ -25,6 +25,21 @@ def application(environ, start_response):
             if v == "G":
                 salida = '{"premio": "$10"}'
                 cont[d.get("alumno", "Anonimo")] = 0
+            elif v == "R":
+                salida = '{"premio": "$20"}'
+                cont[d.get("alumno", "Anonimo")] = 0
+            elif v == "L":
+                salida = '{"premio": "$31"}'
+                cont[d.get("alumno", "Anonimo")] = 0
+            elif v == "A":
+                salida = '{"premio": "$4"}'
+                cont[d.get("alumno", "Anonimo")] = 0
+            elif v == "M":
+                salida = '{"premio": "$15"}'
+                cont[d.get("alumno", "Anonimo")] = 0
+            elif v == "N":
+                salida = '{"premio": "$50"}'
+                cont[d.get("alumno", "Anonimo")] = 0
             elif v == "X":
                 if d.get("alumno", "Anonimo") in cont:
                     cont[d.get("alumno", "Anonimo")] += 1
